@@ -1,0 +1,256 @@
+/* General Styles */
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.woff2') format('woff2');
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+h2 {
+    font-weight: 700;
+    color: #0099cc; /* Updated accent color for a vibrant yet professional look */
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.container {
+    max-width: 1800px; /* Slightly smaller max-width for better content flow */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Search and Button Styling */
+.search-bar {
+    background-color: #e9ecef; /* Subtle light background */
+    border: 1px solid #d1d8e0;
+    border-radius: 25px; /* More rounded corners */
+    color: #444444;
+    padding: 12px 18px;
+    width: 100%;
+    max-width: 420px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-bar:focus {
+    outline: none;
+    border-color: #0099cc;
+    box-shadow: 0 0 6px rgba(0, 153, 204, 0.5); /* Enhanced focus glow */
+}
+
+/* Button Styling */
+.btn-warning {
+    color: #ffffff; /* Dark text for better readability */
+    border-radius: 25px; /* Round corners for a more modern appearance */
+    padding: 8px 16px; /* Adequate padding for a comfortable click */
+    font-size: 14px; /* Adjusted font size for better proportion */
+    font-weight: 600; /* Slightly bolder font for emphasis */
+    text-transform: uppercase; /* Ensures button text is properly capitalized */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+
+.btn-primary {
+    background-color: #0099cc;
+    border-color: #0099cc;
+    border-radius: 25px;
+    color: #ffffff;
+    padding: 10px 18px; /* Slightly larger padding for a more prominent button */
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #007bb5;
+    border-color: #007bb5;
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+.btn-danger {
+    color: #ffffff; /* Dark text for better readability */
+    border-radius: 25px; /* Round corners for a more modern appearance */
+    padding: 8px 16px; /* Adequate padding for a comfortable click */
+    font-size: 14px; /* Adjusted font size for better proportion */
+    font-weight: 600; /* Slightly bolder font for emphasis */
+    text-transform: uppercase; /* Ensures button text is properly capitalized */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.btn-success {
+    color: #ffffff; /* Dark text for better readability */
+    border-radius: 25px; /* Round corners for a more modern appearance */
+    padding: 8px 16px; /* Adequate padding for a comfortable click */
+    font-size: 14px; /* Adjusted font size for better proportion */
+    font-weight: 600; /* Slightly bolder font for emphasis */
+    text-transform: uppercase; /* Ensures button text is properly capitalized */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+
+/* Table Styling */
+.table {
+    background-color: #ffffff;
+    color: #444444;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-spacing: 0;
+}
+
+.table thead {
+    background-color: #007bb5;
+}
+
+.table thead th {
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 18px;
+    font-size: 16px;
+}
+
+.table tbody tr {
+    background-color: #f5f7fa;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #e2e6ea;
+}
+
+.table tbody tr:hover {
+    background-color:rgb(6, 188, 248);
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.table td, .table th {
+    padding: 16px;
+    text-align: left;
+    font-size: 16px;
+}
+
+/* Modal Styling */
+.modal-content {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+    border-bottom: none;
+    background-color: #007bb5;
+}
+
+.modal-title {
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.modal-footer {
+    border-top: none;
+    background-color: #f9f9f9;
+}
+
+/* Form and Input Styling */
+.form-group label {
+    font-weight: 500;
+    color: #6c757d;
+    font-size: 15px;
+}
+
+.form-control {
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    color: #333333;
+    border-radius: 10px;
+    padding: 12px 18px;
+    font-size: 16px;
+    height: auto;
+    line-height: 1.5;
+}
+
+select.form-control {
+    appearance: none;
+    padding-right: 30px;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #0099cc;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+textarea.form-control {
+    resize: none;
+    height: 160px;
+}
+
+.validationMessages{
+    margin-top:5px;
+    color:red;
+}
+
+#displayBtn{
+    display:block;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .modal-dialog {
+        max-width: 100%;
+    }
+
+    .btn-primary {
+        width: 100%;
+        padding: 12px 0;
+    }
+
+    .search-bar {
+        padding: 14px 20px;
+        max-width: 100%;
+    }
+
+    .table thead th {
+        font-size: 14px; /* Smaller font size for better readability on smaller screens */
+        padding: 10px;
+    }
+
+    .table td, .table th {
+        font-size: 14px; /* Smaller font size for better readability */
+        padding: 12px;
+    }
+
+    .form-control {
+        font-size: 14px; /* Slightly smaller font for inputs */
+    }
+
+    h2 {
+        font-size: 22px; /* Slightly smaller h2 for mobile screens */
+        margin-bottom: 15px;
+    }
+
+    /* Make buttons more mobile-friendly */
+    .btn-warning, .btn-primary {
+        width: 100%; /* Buttons span the full width on mobile */
+        padding: 12px 0;
+    }
+}

@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.woff2') format('woff2');
+}
+
+body {
+    background-color: #f4f7fc;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+h2 {
+    font-weight: 600;
+    color: #007bff;
+}
+
+.table thead th {
+    background-color: #007bff;
+    color: white;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f5f8;
+}
+
+.modal-title {
+    font-weight: 600;
+    color: #007bff;
+}
+
+.btn-primary, .btn-primary:hover {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+.modal-content {
+    border-radius: 8px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+.form-group label {
+    font-weight: 500;
+    color: #333;
+}
+
+.search-bar {
+    max-width: 400px;
+    width: 100%;
+}
+
+.btn-primary, .btn-secondary {
+    border-radius: 20px;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.modal-body textarea,
+.modal-body input {
+    border-radius: 10px;
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+.modal-body textarea {
+    resize: none;
+}

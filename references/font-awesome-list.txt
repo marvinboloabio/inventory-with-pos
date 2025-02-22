@@ -1,0 +1,79 @@
+👤 User & Profile Icons
+
+<i class="fas fa-user"></i>            <!-- User -->
+<i class="fas fa-user-circle"></i>     <!-- User Profile -->
+<i class="fas fa-user-check"></i>      <!-- Verified User -->
+<i class="fas fa-user-edit"></i>       <!-- User Editing -->
+<i class="fas fa-user-tie"></i>        <!-- Business User -->
+<i class="fas fa-users"></i>           <!-- Multiple Users -->
+📂 File & Folder Icons
+
+<i class="fas fa-folder"></i>           <!-- Folder -->
+<i class="fas fa-folder-open"></i>      <!-- Open Folder -->
+<i class="fas fa-file"></i>             <!-- File -->
+<i class="fas fa-file-alt"></i>         <!-- Document File -->
+<i class="fas fa-file-pdf"></i>         <!-- PDF File -->
+<i class="fas fa-file-excel"></i>       <!-- Excel File -->
+<i class="fas fa-file-code"></i>        <!-- Code File -->
+
+💾 Data & Storage Icons
+<i class="fas fa-database"></i>         <!-- Database -->
+<i class="fas fa-server"></i>           <!-- Server -->
+<i class="fas fa-hdd"></i>              <!-- Hard Drive -->
+<i class="fas fa-cloud"></i>            <!-- Cloud -->
+<i class="fas fa-cloud-upload-alt"></i> <!-- Cloud Upload -->
+<i class="fas fa-cloud-download-alt"></i> <!-- Cloud Download -->
+
+🔔 Notification & Alerts
+<i class="fas fa-bell"></i>             <!-- Notification Bell -->
+<i class="fas fa-exclamation-circle"></i> <!-- Warning Alert -->
+<i class="fas fa-info-circle"></i>      <!-- Info Alert -->
+<i class="fas fa-check-circle"></i>     <!-- Success Check -->
+<i class="fas fa-times-circle"></i>     <!-- Error Close -->
+
+🛠️ Tools & Settings
+<i class="fas fa-cog"></i>              <!-- Settings -->
+<i class="fas fa-wrench"></i>           <!-- Wrench -->
+<i class="fas fa-tools"></i>            <!-- Tools -->
+<i class="fas fa-key"></i>              <!-- Key -->
+<i class="fas fa-lock"></i>             <!-- Lock -->
+<i class="fas fa-unlock"></i>           <!-- Unlock -->
+
+📞 Contact & Communication
+<i class="fas fa-envelope"></i>         <!-- Email -->
+<i class="fas fa-phone"></i>            <!-- Phone -->
+<i class="fas fa-comment"></i>          <!-- Comment -->
+<i class="fas fa-comments"></i>         <!-- Multiple Comments -->
+<i class="fas fa-paper-plane"></i>      <!-- Send Message -->
+
+📌 Actions & Navigation
+<i class="fas fa-home"></i>             <!-- Home -->
+<i class="fas fa-arrow-left"></i>       <!-- Back -->
+<i class="fas fa-arrow-right"></i>      <!-- Forward -->
+<i class="fas fa-plus"></i>             <!-- Add -->
+<i class="fas fa-minus"></i>            <!-- Remove -->
+<i class="fas fa-trash"></i>            <!-- Delete -->
+<i class="fas fa-edit"></i>             <!-- Edit -->
+
+📊 Charts & Analytics
+<i class="fas fa-chart-bar"></i>        <!-- Bar Chart -->
+<i class="fas fa-chart-pie"></i>        <!-- Pie Chart -->
+<i class="fas fa-chart-line"></i>       <!-- Line Chart -->
+<i class="fas fa-table"></i>            <!-- Table -->
+<i class="fas fa-list"></i>             <!-- List -->
+
+📦 Shopping & E-Commerce
+<i class="fas fa-shopping-cart"></i>    <!-- Shopping Cart -->
+<i class="fas fa-credit-card"></i>      <!-- Credit Card -->
+<i class="fas fa-dollar-sign"></i>      <!-- Dollar Sign -->
+<i class="fas fa-money-bill"></i>       <!-- Money Bill -->
+<i class="fas fa-gift"></i>             <!-- Gift -->
+
+🚀 Miscellaneous
+<i class="fas fa-lightbulb"></i>        <!-- Idea -->
+<i class="fas fa-heart"></i>            <!-- Heart -->
+<i class="fas fa-star"></i>             <!-- Star -->
+<i class="fas fa-moon"></i>             <!-- Dark Mode -->
+<i class="fas fa-sun"></i>              <!-- Light Mode -->
+<i class="fas fa-music"></i>            <!-- Music -->
+<i class="fas fa-gamepad"></i>          <!-- Gaming -->

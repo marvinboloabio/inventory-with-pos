@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.woff2') format('woff2');
+   
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+    background-color: #495057;
+    color: #f8f9fa;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow for more depth */
+    transition: transform 0.2s ease-in-out;
+    padding: 20px; /* Added padding for spacing inside the card */
+    margin: 10px; /* Add space between cards */
+    text-align: center; /* Center align text and content */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    font-weight: 600;
+    color: #00aaff;
+    margin-bottom: 15px; /* Add margin to separate from content */
+}
+
+.card-text {
+    color: #e9ecef;
+    margin-bottom: 20px; /* Add margin for better spacing */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.btn-primary {
+    background-color: #00aaff;
+    border-color: #00aaff;
+    font-weight: 500;
+    padding: 10px 20px; /* Adjusted padding for better button size */
+    margin-top: 15px; /* Space between button and card content */
+}
+
+.btn-primary:hover {
+    background-color: #007acc;
+    border-color: #007acc;
+}
+
+/* Styling for the icon and text */
+.icon-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.icon-img {
+    width: 20px; /* Adjust the size of the icon */
+    margin-right: 8px;
+}
+
+
+

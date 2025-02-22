@@ -1,0 +1,141 @@
+let suppliers = []; // Declare a global suppliers array to hold the data
+
+$(document).ready(function () {
+    fetchSuppliers();
+
+    $('#searchSupplier').on('keyup', function () {
+        const searchValue = $(this).val().toLowerCase();
+        const filteredSuppliers = suppliers.filter(supplier =>
+            supplier.name.toLowerCase().includes(searchValue) ||
+            supplier.contact.toLowerCase().includes(searchValue) ||
+            supplier.email.toLowerCase().includes(searchValue) ||
+            supplier.address.toLowerCase().includes(searchValue)
+        );
+        renderSuppliers(filteredSuppliers);
+    });
+});
+
+function clearSupplierForm() {
+    $('#userId').val('');
+    $('#userName').val('');
+    $('#password').val('');
+    $('#userEmail').val('');
+    $('#role').val('');
+    $('#userModalLabel').text('Add New Supplier');
+}
+
+function fetchSuppliers() {
+    $.ajax({
+        url: '/inventory-system/api/user.php',
+        method: 'GET',
+        success: function (data) {
+            let suppliersData = data;
+            if (typeof data === 'string') {
+                try {
+                    suppliersData = JSON.parse(data);
+                } catch (e) {
+                    console.error('Error parsing JSON:', e);
+                    return;
+                }
+            }
+            suppliers = suppliersData;  // Store the fetched suppliers in the global array
+            renderSuppliers(suppliersData);
+        },
+        error: function (xhr, status, error) {
+            console.error('Error fetching categories:', error);
+                console.error('Response Text:', xhr.responseText);
+                reject(error);
+
+        }
+    });
+}
+
+function renderSuppliers(suppliers) {
+    const supplierTableBody = $('#supplierTableBody');
+    supplierTableBody.empty(); // Clear the table body
+
+    suppliers.forEach((supplier) => {
+        const row = `
+             <tr>
+                 <td>${supplier.id}</td>
+                 <td>${supplier.username}</td>
+                 <td>${supplier.password}</td>
+                 <td>${supplier.email}</td>
+                 <td>${supplier.role}</td>
+                 <td>${supplier.status}</td>
+                 <td>
+                     <button class="btn btn-primary btn-sm" onclick="editSupplier(${supplier.id})">Edit</button>
+                 </td>
+             </tr>
+         `;
+        supplierTableBody.append(row);
+    });
+}
+
+function saveSupplier() {
+
+    const supplierData = {
+        username: $('#userName').val(),
+        password: $('#password').val(),
+        email: $('#userEmail').val(),
+        role: $('#role').val(),
+
+    };
+      
+    if (!supplierData.username || !supplierData.password || !supplierData.email || !supplierData.role) {
+        alert('Please fill all fields');
+        return;
+    }
+
+    const id = $('#supplierId').val();
+    if (id) {
+        supplierData.id = id;
+        updateSupplier(supplierData);
+    } else {
+        createSupplier(supplierData);
+    }
+}
+
+function createSupplier(supplierData) {
+    $.ajax({
+        url: '/inventory-system/api/user.php',
+        method: 'POST',
+        data: JSON.stringify(supplierData),
+        contentType: 'application/json',
+        success: function (response) {
+            console.log("Supplier created successfully:", response.data);
+            $('#supplierModal').modal('hide');
+            fetchSuppliers();
+        },
+        error: function (xhr, status, error) {
+            console.error('Error creating supplier:', error);
+        }
+    });
+}
+
+function updateSupplier(supplierData) {
+    $.ajax({
+        url: '/inventory-system/api/user.php',
+        method: 'PUT',
+        data: JSON.stringify(supplierData),
+        contentType: 'application/json',
+        success: function () {
+            $('#supplierModal').modal('hide');
+            fetchSuppliers();
+        },
+        error: function (xhr, status, error) {
+            console.error('Error updating supplier:', error);
+        }
+    });
+}
+
+function editSupplier(id) {
+    const supplier = suppliers.find(supplier => supplier.id == id);
+    $('#userId').val(supplier.id);
+    $('#userName').val(supplier.username);
+    $('#password').val(supplier.password);
+    $('#userEmail').val(supplier.email);
+    $('#role').val(supplier.role);
+    $('#userModalLabel').text('Edit Supplier');
+    $('#supplierModal').modal('show');
+}

@@ -1,0 +1,82 @@
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.woff2') format('woff2');
+   
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.icons{
+    font-size:30px;
+    color: #cbd1d6;
+}
+
+.navbar {
+    background-color: #212529;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 600;
+    color: white;
+}
+
+.nav-container {
+    margin-top:50px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding: 0px 200px;
+}
+
+.navbar-brand:hover {
+    color: #adb5bd;
+}
+
+.nav-item .btn {
+    background-color: transparent;
+    color: white;
+    font-weight: 500;
+}
+
+.nav-item .btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #adb5bd;
+}
+
+.user-name {
+    font-weight: 500;
+    color: white;
+}
+
+.icon img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15px; /* Added spacing below the icon */
+}
+
+.icon-buttons img.icon-img {
+    width: 20px; /* Set the width to make the icon smaller */
+    height: 20px; /* Set the height to keep it proportional */
+    margin-right: 8px; /* Add space between the icon and text */
+    vertical-align: middle; /* Align the icon with the text vertically */
+}
+
+/* Optional: Add hover effect to dropdown items */
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+#user_id{
+    margin-left:5px;
+}
+
+  /* Ensure that the dropdown shows on hover */
+  .dropdown:hover .dropdown-menu {
+    display: block;
+}
